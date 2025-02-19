@@ -47,6 +47,33 @@ main {
   justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+
+  .container-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero .container-flex {
+    flex-direction: column;
+  }
+}
+@media (max-width: 481px) {
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .container-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
 /* ======================
    CABEÇALHO
 ====================== */
@@ -102,6 +129,10 @@ h1 a {
   border-radius: 5px;
 }
 
+.menu-burguer {
+  display: none;
+}
+
 .btn-header {
   padding: 10px 20px;
   background-color: #ffc107;
@@ -112,6 +143,40 @@ h1 a {
 
 .btn-header:hover {
   background-color: #ff9800;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+
+  .nav ul {
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .nav ul li {
+    text-align: center;
+  }
+
+  .btn-header {
+    display: none;
+  }
+}
+@media (max-width: 481px) {
+  .nav ul {
+    display: none;
+  }
+
+  .menu-burguer {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
 }
 
 /* ======================
@@ -182,6 +247,42 @@ textarea {
   height: auto;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .booking-form {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+    max-width: 80%;
+    align-self: center;
+  }
+}
+
 /* ======================
    VANTAGENS
 ====================== */
@@ -224,6 +325,18 @@ textarea {
 
 .feature p {
   color: #666;
+}
+
+@media (max-width: 481px) {
+  .features div h2 {
+    flex-grow: 1;
+    margin: 0 2rem;
+  }
+
+  .features-grid {
+    flex-grow: 1;
+    flex-direction: column;
+  }
 }
 
 /* ======================
@@ -311,6 +424,21 @@ textarea {
   background-image: url("../assets/verao.png");
 }
 
+@media (max-width: 768px) {
+  .destinations {
+    height: auto;
+  }
+  .destination-image {
+    height: 300px;
+    background-position: bottom;
+  }
+}
+@media (max-width: 481px) {
+  .destinations {
+    padding: 30px 15px;
+  }
+}
+
 /* ======================
    INFORMAÇÕES
 ====================== */
@@ -395,6 +523,34 @@ textarea {
   background-color: rgb(248, 206, 119);
   border-radius: 15px;
   padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .section-info {
+    height: auto;
+  }
+  .text-content {
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+  .info-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .info-image {
+    width: 60%;
+  }
+  .stats {
+    max-width: 100%;
+  }
+}
+@media (max-width: 481px) {
+  .info-image {
+    width: 100%;
+  }
+  .family {
+    padding: 50px;
+  }
 }
 
 /* ======================
@@ -487,17 +643,22 @@ textarea {
 /* Responsivo */
 @media (max-width: 768px) {
   .footer-container {
-    flex-direction: column;
     text-align: center;
   }
 
   .footer-social {
     text-align: center;
     margin-top: 20px;
+    flex-grow: 1;
   }
 
   .footer-social a {
     margin: 5px;
+  }
+}
+@media (max-width: 481px) {
+  .footer-column {
+    display: none;
   }
 }
 
@@ -580,6 +741,26 @@ textarea {
   align-items: center;
   justify-content: center;
   /* gap: 40px; */
+}
+
+@media (max-width: 768px) {
+}
+@media (max-width: 481px) {
+  .cf {
+    margin: 0;
+    padding: 20px 20px 0 20px;
+    #input-submit {
+      width: 50%;
+      margin-top: 20px;
+      justify-self: center;
+    }
+    textarea {
+      margin: 0;
+    }
+  }
+  .info-const {
+    flex-direction: column;
+  }
 }
 
 /* ======================

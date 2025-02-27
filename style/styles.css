@@ -450,6 +450,12 @@ textarea {
   padding: 50px;
   background: linear-gradient(to right, #fff, #f3f3f3);
   height: 100vh;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
 }
 
 .info-box {

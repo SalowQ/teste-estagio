@@ -296,19 +296,19 @@ textarea {
 }
 
 .winter {
-  background-image: url("assets/estacao-inverno.png");
+  background-image: url("images/estacao-inverno.png");
 }
 
 .autumn {
-  background-image: url("assets/estacao-outono.png");
+  background-image: url("images/estacao-outono.png");
 }
 
 .spring {
-  background-image: url("assets/estacao-primavera.png");
+  background-image: url("images/estacao-primavera.png");
 }
 
 .summer {
-  background-image: url("assets/estacao-verao.png");
+  background-image: url("images/estacao-verao.png");
 }
 
 /* ======================
